@@ -8,6 +8,8 @@ class ParksController < ApplicationController
       @parks = Park.search(name)
     elsif location = params[:location]
       @parks = Park.search(location)
+    elsif content = params[:content]
+      @parks = Park.search(content)
     else
       @parks = Park.all
     end
