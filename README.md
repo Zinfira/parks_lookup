@@ -32,7 +32,16 @@ Open the browser(Chrome) and navigate to __http://localhost:3000/__
 
 ## Endpoints
 
-
+| Request | Input | Output |
+|---------|-------|--------|
+| GET all parks | http://localhost:3000/parks | Return list of all parks |
+| GET a park by id | http://localhost:3000/parks/:id | Return a park based on id |
+| POST a new park | http://localhost:3000/parks and add name, location and content by clicking on "Body" in Postman just below the URL and passing in key-value pairs. | Post a new park |
+| PUT a park | http://localhost:3000/parks/:id and update name and/or location and/or content by clicking on "Body" in Postman just below the URL and passing in key-value pairs. | Update a park |
+| DELETE a park | http://localhost:3000/parks/:id | Delete a park with corresponding :id |
+| GET | http://localhost:3000/parks?name=[NAME] | Return park with that name |
+| GET | http://localhost:3000/parks?location=[LOCATION] | Return park with that location(state) |
+| GET | http://localhost:3000/parks?content=[CONTENT] | Return park with that content |
 
 ## Known Bugs
 
