@@ -46,6 +46,11 @@ class ParksController < ApplicationController
     end
   end
 
+  def random
+    @park = Park.find(rand(20))
+    json_response(@park)
+  end
+
   private
   def park_params
     params.permit(:name, :location, :content)
