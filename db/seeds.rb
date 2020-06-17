@@ -6,7 +6,7 @@ class Seed
   end
 
   def generate_parks
-    20.times do |i|
+    40.times do |i|
       park = Park.create!(
         name: Faker::Address.street_name,
         location: Faker::Address.state,

@@ -42,7 +42,7 @@ Open the browser(Chrome) and navigate to __http://localhost:3000/__
 | GET | http://localhost:3000/parks?name=[NAME] | Return park with that name |
 | GET | http://localhost:3000/parks?location=[LOCATION] | Return park with that location(state) |
 | GET | http://localhost:3000/parks?content=[CONTENT] | Return park with that content |
-| GET | http://localhost:3000/parks?page=[n] | Return that page with 3 parks on the the list |
+| GET | http://localhost:3000/parks?page=[n] | Return that page with 5 parks on the the list |
 | GET | http://localhost:3000/parks/1/random | Randomly returns a park | 
 
 ## Known Bugs

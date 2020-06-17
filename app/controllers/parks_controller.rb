@@ -12,7 +12,7 @@ class ParksController < ApplicationController
       @parks = Park.search(content)
     else
       @parks = Park.all
-      @parks = Park.page(params[:page]).per(3)
+      @parks = Park.page(params[:page]).per(5)
     end
     
     json_response(@parks)
